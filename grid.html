@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-item item1">
+      <button class="bouton3"><i class="fa fa-home"></i> Aceuil</button>
+      <button class="button"> <i class="fa fa-search"></i></button><div classe="label"><input type="text" id="uname" name="name"></div>
+      <button class="button" ><i class="fa fa-user"></i> Compte </button>
+      <button class="button"><i class="fa fa-warning"></i> alerte</button>
+      <button class="button"><i class="fa fa-heart"></i> Mes favoris</button>
+      <button class="button"id="tot" onclick="somme()"> <i class="fa fa-dollar"></i>valider Achat</button>
+      <button class="button"> <i class="fa fa-question"></i>A propos</button>
+      </div>
+      <div class="grid-item item2">    </div>
+    <div class="grid-item item4"><img src="magasin/1.jpg" alt=""><a href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+  <button id="b1" class="button1"onclick="somme1()"> JE SHOPPE!</button>
+  <input type='number' id= 'myNumber1' min="0" max="20"name='quantity1' value='0' class='qty' /> 
+  <h1> Prix tot en dt=</h1> <h class="label" id=somme1></h> </div>
+
+  <div class="grid-item item4"><img src="magasin/2.jpg" alt=""><a href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+    <button id="b2" class="button1"onclick="somme2()"> JE SHOPPE! </button>
+    <input type='number' id= 'myNumber2'min="0" max="20" name='quantity2' value='0' class='qty' />
+    <h1> Prix tot en dt=</h1> <h class="label" id=somme2></h></div>
+    <div class="grid-item item4"><img src="magasin/3.jpg" alt=""><a  href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+    <button id="b3" class="button1"onclick="somme3()"> JE SHOPPE! </button>
+    <input type='number' id= 'myNumber3'min="0" max="20" name='quantity3' value='0' class='qty' />
+    <h1> Prix tot en dt=</h1> <h class="label" id=somme3></h></div>
+ 
+  <div class="grid-item item4"><img src="magasin/4.jpg" alt=""><a  href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+    <button id="b4" class="button1"onclick="somme4()"> JE SHOPPE! </button>
+    <input type='number' id= 'myNumber4'min="0" max="20" name='quantity4' value='0' class='qty' />
+    <h1> Prix tot en dt=</h1> <h class="label" id=somme4></h></div>
+ 
+  <div class="grid-item item4"><img src="magasin/5.jpg" alt=""><a   href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+    <button id="b5" class="button1"onclick="somme5()"> JE SHOPPE! </button>
+    <input type='number' id= 'myNumber5'min="0" max="20" name='quantity5' value='0' class='qty' />
+    <h1> Prix tot en dt=</h1> <h class="label" id=somme5></h></div>
+ 
+  <div class="grid-item item4"><img src="magasin/6.jpg" alt=""><a  href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+    <button id="b6" class="button1"onclick="somme6()"> JE SHOPPE! </button>
+    <input type='number' id= 'myNumber6'min="0" max="20" name='quantity6' value='0' class='qty' />
+    <h1> Prix tot en Dt>></h1> <h class="label" id=somme6></h></div>
+  
+  <div class="grid-item item4"><img src="magasin/7.jpg" alt=""><a  href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+    <button id="b7" class="button1"onclick="somme7()"> JE SHOPPE! </button>
+    <input type='number' id= 'myNumber7'min="0" max="20" name='quantity7' value='0' class='qty' />
+    <h1> Prix tot en dt=</h1> <h class="label" id=somme7></h></div>
+ 
+  <div class="grid-item item4"><img src="magasin/8.jpg" alt=""> <a   href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+    <button id="b8" class="button1"onclick="somme8()"> JE SHOPPE! </button>
+    <input type='counter' id= 'myNumber8'min="0" max="20" name='quantity8' value='0' class='qty' />
+    <h1> Prix tot en dt=</h1> <h class="label" id=somme8></h>
+  </div>
+      </div>
+      </div>
+ <script>
+ function somme1() { 
+var variable1 = document.getElementById('myNumber1').value; 
+var variable2 = document.getElementById('somme1').value=0; 
+if(variable1>0 ) { 
+   var variable3 = variable1*25;
+   document.getElementById('somme1').value = variable3;
+   document.getElementById('somme1').innerHTML=variable3;
+} else {
+   document.getElementById('somme1').value = '0';
+   document.getElementById('somme1').innerHTML=0;
+}
+}
+function somme2() { 
+var variable1 = document.getElementById('myNumber2').value; 
+var variable2 = document.getElementById('somme2').value=0; 
+if(variable1>0 ) { 
+   var variable3 = variable1*29;
+   document.getElementById('somme2').value = variable3;
+   document.getElementById('somme2').innerHTML=variable3;
+} else {
+   document.getElementById('somme2').value = '0';
+   document.getElementById('somme2').innerHTML=0;
+}
+}
+function somme3() { 
+var variable1 = document.getElementById('myNumber3').value; 
+var variable2 = document.getElementById('somme3').value=0; 
+if(variable1>0 ) { 
+   var variable3 = variable1*35;
+   document.getElementById('somme3').value = variable3;
+   document.getElementById('somme3').innerHTML=variable3;
+} else {
+   document.getElementById('somme3').value = '0';
+   document.getElementById('somme3').innerHTML=0;
+}
+}
+function somme4() { 
+var variable1 = document.getElementById('myNumber4').value; 
+var variable2 = document.getElementById('somme4').value=0; 
+if(variable1>=0 ) { 
+   var variable3 = variable1*39;
+   document.getElementById('somme4').value = variable3;
+   document.getElementById('somme4').innerHTML=variable3;
+} else {
+   document.getElementById('somme4').value = '0';
+   document.getElementById('somme4').innerHTML=0;
+}
+}
+function somme5() { 
+var variable1 = document.getElementById('myNumber5').value; 
+var variable2 = document.getElementById('somme5').value=0; 
+if(variable1>0 ) { 
+   var variable3 = variable1*45;
+   document.getElementById('somme5').value = variable3;
+   document.getElementById('somme5').innerHTML=variable3;
+} else {
+   document.getElementById('somme5').value = '0';
+   document.getElementById('somme5').innerHTML=0;
+}
+}
+function somme6() { 
+var variable1 = document.getElementById('myNumber6').value; 
+var variable2 = document.getElementById('somme6').value=0; 
+if(variable1>0 ) { 
+   var variable3 = variable1*49;
+   document.getElementById('somme6').value = variable3;
+   document.getElementById('somme6').innerHTML=variable3;
+} else {
+   document.getElementById('somme6').value = '0';
+   document.getElementById('somme6').innerHTML=0;
+}
+}
+function somme7() { 
+var variable1 = document.getElementById('myNumber7').value; 
+var variable2 = document.getElementById('somme7').value=0; 
+if(variable1>0 ) { 
+   var variable3 = variable1*55;
+   document.getElementById('somme7').value = variable3;
+   document.getElementById('somme7').innerHTML=variable3;
+} else {
+   document.getElementById('somme7').value = '0';
+   document.getElementById('somme7').innerHTML=0;
+}
+}
+function somme8() { 
+var variable1 = document.getElementById('myNumber8').value; 
+var variable2 = document.getElementById('somme8').value=0; 
+if(variable1>0 ) { 
+   var variable3 = variable1*59;
+   document.getElementById('somme8').value = variable3;
+   document.getElementById('somme8').innerHTML=variable3;
+} else {
+   document.getElementById('somme8').value = '0';
+   document.getElementById('somme8').innerHTML=0;
+}
+}
+function somme() 
+{ 
+var variable1,variable2,variable3,variable4,variable5,variable6,variable7,variable8,variable31;
+
+if(!(parseInt( document.getElementById('somme1').value)))
+{variable1=0}
+else{variable1 =parseInt( document.getElementById('somme1').value);}
+if(!(parseInt( document.getElementById('somme2').value)))
+{variable2=0}
+else{variable2 =parseInt( document.getElementById('somme2').value);}
+if(!(parseInt( document.getElementById('somme3').value)))
+{variable3=0}
+else{variable3 =parseInt( document.getElementById('somme3').value);}
+if(!(parseInt( document.getElementById('somme4').value)))
+{variable4=0}
+else{variable4 =parseInt( document.getElementById('somme4').value);}
+if(!(parseInt(document.getElementById('somme5').value)))
+{variable5=0}
+else{variable5 =parseInt( document.getElementById('somme5').value);}
+if(!(parseInt( document.getElementById('somme6').value)))
+{variable6=0}
+else{variable6 =parseInt( document.getElementById('somme6').value);}
+if(!(parseInt( document.getElementById('somme7').value)))
+{variable7=0}
+else{variable7 =parseInt( document.getElementById('somme7').value);}
+if(!(parseInt( document.getElementById('somme8').value)))
+{variable8=0}
+else{variable8 =parseInt( document.getElementById('somme8').value);}
+variable31 = variable1+variable2+variable3+variable4+variable5+variable6+variable7+variable8;
+if (variable31==0)
+{alert("Acheter quelque chose STP!!??")}
+else{
+alert(">>votre total d achat en dinars est:>>   "+variable31)}
+}
+</script>
+</body>
+</html>
